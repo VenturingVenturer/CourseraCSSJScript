@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+p {
+/*  border: 1px solid black;
+  background-color: #90C3D4;
+  width: 90%; */
+  width:auto;
+  /* height: 150px; */
+  /*height: 250px; */
+  height:auto;
+/*  margin-right: auto; */
+/*   margin-left: auto; */
+  margin-right: 20px;
+  margin-left: 20px;
+  color: black;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 .row-lg {
+    float: left;
+ /*   border: 1px solid green; */
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .row-lg {
+/*    margin-left: 20px;
+    margin-right:20px;*/
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+ /*   border: 1px solid green; */
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+.menu-group {
+	position: relative;
+	border: 1px solid black;
+	background-color: #C3D5DB;
+	margin: 1em;
+
+}
+.menu-group-description {
+/*	position: relative; */
+	top: 3em;	
+	clear: right;
+}
+
+.menu-group-title {
+/*	position: absolute;
+	top: 0;
+	right: 0;
+*/
+
+	float:right;
+	margin-bottom: 1em;
+	width: 10em;
+	height: 2.25em;
+	border: 2px solid black;
+	text-align: center;
+	padding-top: 0.5em;
+	font-family: Helvetica;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.menu-group-title-1 {
+  	background-color: #C390D4;
+}
+.menu-group-title-2{
+  	background-color: #A1D490;
+}
+.menu-group-title-3 {
+  	background-color: #D4A190;
+}
+#menu-title {
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+
+</style>
+</head>
+<body>
+<center> <h1 id="menu-title">Our Menu</h1> </center>
+
+<div class="row row-lg">
+  <div class="col-lg-4 col-md-6 ">
+  	<div class=menu-group>
+  		<div class="menu-group-title menu-group-title-1">Chicken</div>
+  		<p class="menu-group-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  	</div>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <div class=menu-group>
+  		<div class="menu-group-title menu-group-title-2 "> Beef</div>
+  		<p class="menu-group-description">Item 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  	</div>
+  </div>
+  <div class="col-lg-4 col-md-12">
+    <div class=menu-group>
+    	<div class="menu-group-title menu-group-title-3 "> Sushi</div>
+  		<p class="menu-group-description">Item 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  	</div>  
+  </div>
+
+<!-- 
+  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 5</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+  -->
+</div>
+
+</body>
+</html>
